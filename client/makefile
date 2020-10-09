@@ -1,8 +1,9 @@
 CC=g++
-SERVER_FLAGS=-lpthreads
+SERVER_FLAGS=
+STANDARD=-std=c++11
 
 all:
-	$(CC) -o client main.cpp
+	$(CC) $(STANDARD) $(SERVER_FLAGS) -o client main.cpp
 
 clean:
 	rm -f *.o
